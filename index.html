@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highland WiFi Kiosk</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f3;
+}
+
+/* HEADER WITH IMAGE */
+.header-container {
+    position: relative;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background: url('highland.jpg') no-repeat center center/cover;
+}
+
+/* DARK OVERLAY */
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* TEXT ON IMAGE */
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 18px;
+}
+
+/* NAV */
+nav {
+    background: #1b5e20;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* BUTTON */
+button {
+    background: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+/* FOOTER */
+footer {
+    background: #2e7d32;
+    color: white;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header-container">
+    <div class="header-content">
+        <h1>Highland WiFi Kiosk</h1>
+        <p>Connecting Baguio, One Kiosk at a Time</p>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#locations">Locations</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- PROBLEM -->
+<section id="problem">
+    <div class="card">
+        <h2>🚨 The Problem</h2>
+        <p>Public WiFi in Baguio City is often <span class="highlight">slow, unreliable, and insecure</span>.</p>
+        <p>Students, tourists, and workers struggle to stay connected.</p>
+    </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+    <div class="card">
+        <h2>💡 Our Solution</h2>
+        <p>We provide <span class="highlight">fast, secure, and affordable internet</span> through WiFi kiosks.</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Highland WiFi Kiosk delivers reliable internet access through strategically placed kiosks.</p>
+        <p>We support students, tourists, and workers by improving connectivity.</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="card">
+        <h2>⚙️ Services</h2>
+        <p>✔ Pay-per-use WiFi</p>
+        <p>✔ High-speed internet</p>
+        <p>✔ Secure connection</p>
+        <p>✔ 24/7 availability</p>
+    </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations">
+    <div class="card">
+        <h2>📍 Locations</h2>
+        <p>Burnham Park</p>
+        <p>Session Road</p>
+        <p>Baguio Public Market</p>
+        <p>Bus Terminals</p>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+    <div class="card">
+        <h2>💰 Pricing</h2>
+        <p>₱10 – 1 Hour</p>
+        <p>₱25 – 3 Hours</p>
+        <p>₱50 – Whole Day</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="card">
+        <h2>📞 Contact</h2>
+        <p>Email: highlandwifi@gmail.com</p>
+        <p>Phone: 0912-345-6789</p>
+    </div>
+</section>
+
+<!-- BUTTON -->
+<section>
+    <button onclick="alert('Connecting to WiFi...')">Connect Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Highland WiFi Kiosk | Stay Connected in the Highlands</p>
+</footer>
+
+</body>
+</html>
